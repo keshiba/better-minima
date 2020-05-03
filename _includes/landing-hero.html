@@ -1,0 +1,12 @@
+
+<div class="hero-wrapper">
+  {%- if site.author %}
+    {% if site.author.name -%}
+      <h1>{{ site.author.name | escape }}</h1>
+    {% endif -%}
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+  {%- endif %}
+</div>
