@@ -3,6 +3,7 @@ layout: post
 title: "ARP spoofing: How to prevent ARP spoofing"
 author: Keshiba
 featured: true
+categories: tech
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Everything you need to know about Shellshock"
 author: Keshiba
 featured: true
+categories: tech
 ---
 
 ![Shellcode Image](/assets/img/posts/shellshock.jpg)

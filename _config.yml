@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "show_excerpts:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-show_excerpts: false # set to true to show excerpts on the homepage
-paginate: true
+show_excerpts: true # set to true to show excerpts on the homepage
+paginate: false
 
 # Better-Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -23,13 +23,13 @@ better-minima:
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
-    instagram: jekyll
-    linkedin: jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
     # youtube_channel_name: CloudCannon
-    telegram: jekyll
+    # telegram: jekyll
     # googleplus: +jekyll
     # microdotblog: jekyll
     # keybase: jekyll
@@ -54,9 +54,8 @@ better-minima:
 # - about.md
 
 # Build settings
-theme: minima
+theme: better-minima
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
- - jekyll-paginate
