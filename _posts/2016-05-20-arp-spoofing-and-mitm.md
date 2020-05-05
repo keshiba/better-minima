@@ -2,8 +2,11 @@
 layout: post
 title: "ARP spoofing: How to prevent ARP spoofing"
 author: Keshiba
+featured: true
+categories: tech
 ---
 
+> ARP spoofing is a technique by which an attacker sends (spoofed) Address Resolution Protocol (ARP) messages onto a local area network.
 
 ## Introduction
 

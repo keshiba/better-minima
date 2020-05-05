@@ -2,7 +2,11 @@
 layout: post
 title: "Everything you need to know about Shellshock"
 author: Keshiba
+featured: true
+categories: tech
 ---
+
+> Shellshock, also known as Bashdoor, is a family of security bugs in the Unix Bash shell
 
 ![Shellcode Image](/assets/img/posts/shellshock.jpg)
 
