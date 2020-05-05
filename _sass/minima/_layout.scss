@@ -30,13 +30,17 @@
 
 .home-wrapper {
   margin-top: $spacing-unit;
+  h2 {
+    text-align: center;
+  }
 }
 
 .landing-page {
   background-color: #F5F5F7;
+  padding-bottom: $spacing-unit / 2;
 }
 
-.featuredposts-container, .recentposts-container {
+.featuredposts-container, .allposts-container {
   background-color: #FFFFFF;
   padding: ($spacing-unit / 2) ($spacing-unit / 2);
   border-bottom: 1px solid #d2d2d7;
@@ -46,7 +50,7 @@
 .featuredposts-container {
 }
 
-.recentposts-container {
+.allposts-container {
 }
 
 .site-nav {
@@ -232,6 +236,7 @@
  * Page content
  */
 .page-content {
+  padding: $spacing-unit 0;
   flex: 1 0 auto;
 }
 

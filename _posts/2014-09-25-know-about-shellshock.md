@@ -6,6 +6,8 @@ featured: true
 categories: tech
 ---
 
+> Shellshock, also known as Bashdoor, is a family of security bugs in the Unix Bash shell
+
 ![Shellcode Image](/assets/img/posts/shellshock.jpg)
 
 *Shellshock*, also known as Bashdoor, is a family of security bugs in the Unix Bash shell, the first of which was disclosed on 24 September 2014. Shellshock could enable an attacker to cause Bash to execute arbitrary commands and gain unauthorized access to many Internet-facing services, such as web servers, that use Bash to process requests.
