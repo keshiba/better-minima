@@ -30,9 +30,6 @@
 
 .home-wrapper {
   margin-top: $spacing-unit;
-  h2 {
-    text-align: center;
-  }
 }
 
 .landing-page {
@@ -40,7 +37,7 @@
   padding-bottom: $spacing-unit / 2;
 }
 
-.featuredposts-container, .allposts-container {
+.featuredposts-container, .recentposts-container {
   background-color: #FFFFFF;
   padding: ($spacing-unit / 2) ($spacing-unit / 2);
   border-bottom: 1px solid #d2d2d7;
@@ -50,7 +47,7 @@
 .featuredposts-container {
 }
 
-.allposts-container {
+.recentposts-container {
 }
 
 .site-nav {
