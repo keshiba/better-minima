@@ -8,34 +8,60 @@ layout: html_scaffold
 
   <div class="wrapper home-wrapper">
 
-    {% if site.paginate %}
-      {% assign posts = paginator.posts %}
-    {% else %}
-      {% assign posts = site.posts %}
-    {% endif %}
-
-    {% assign featured_posts = posts | where: "featured",true %}
+    {% assign featured_posts = site.posts | where: "featured",true %}
     {%- if featured_posts.size > 0 -%}
     <!-- Add Featured Posts here -->
     <div class="featuredposts-container">
-      <h2>Featured</h2>
+      <h1>Featured</h1>
 
-      {% include post_list.html render_posts=featured_posts %}
+      <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in featured_posts limit: site.recent_posts_count -%}
+        <li>
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
 
     </div>
     <!-- {%- endif -%} -->
 
-    {%- if posts.size > 0 -%}
+    {%- if site.posts.size > 0 -%}
     <!-- Add Recent Posts here -->
-    <div class="allposts-container">
-      <h2>All Posts</h2>
+    <div class="recentposts-container">
+      <h1>Recent Posts</h1>
 
-      {% include post_list.html render_posts=posts %}
+      <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in site.posts limit: site.recent_posts_count -%}
+        <li>
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <a href={{ "/blog/" | relative_url }}>
+        View all posts
+      </a>
 
     </div>
     {%- endif -%}
-
-
 
   </div>
 
