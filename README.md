@@ -1,7 +1,7 @@
 # better-minima
 
 *Better-Minima* is based on [Minima](https://github.com/jekyll/minima) which is Jekyll's default theme.
-Minima in itself is a great theme with a very minimal and clean look. 
+Minima is a beautiful theme to begin with and has a clean look. 
 
 Better-Minima builds upon it by making the theme more suitable for a personal blog.
 
