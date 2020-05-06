@@ -21,6 +21,19 @@ And then execute:
 
     $ bundle
 
+## Usage
+### Featured Posts
+A list of *Featured Posts* are displayed on the homepage.
+To add a post to this list, set the `featured` variable to `true`.
+
+```
+---
+title: "This is a featured post"
+featured: true
+---
+Post content goes here
+```
+
 
 Visit https://github.com/jekyll/minima for more information.
 
