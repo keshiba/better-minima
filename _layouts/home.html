@@ -32,7 +32,7 @@ layout: html_scaffold
       </ul>
 
     </div>
-    <!-- {%- endif -%} -->
+    {%- endif -%}
 
     {%- if site.posts.size > 0 -%}
     <!-- Add Recent Posts here -->
@@ -41,6 +41,13 @@ layout: html_scaffold
 
       <ul class="post-list">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+        {% if site.recent_posts_count %}
+          {% assign posts_count = site.recent_posts_count %}
+        {% else %}
+          {% assign posts_count = 10 %}
+        {% endif %}
+
         {%- for post in site.posts limit: site.recent_posts_count -%}
         <li>
           <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -56,9 +63,11 @@ layout: html_scaffold
         {%- endfor -%}
       </ul>
 
-      <a href={{ "/blog/" | relative_url }}>
+      {% if site.paginate_root_path %}
+      <a href="{{ site.paginate_root_path | relative_url }}">
         View all posts
       </a>
+      {% endif %}
 
     </div>
     {%- endif -%}
