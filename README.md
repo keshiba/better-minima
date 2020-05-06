@@ -80,7 +80,7 @@ Refers to various asset files within the `assets` directory.
 
   - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
     stylesheet: `assets/css/styles.css`.
-  - `assets/minima-social-icons.svg` &mdash; A composite SVG file comprised of *symbols* related to various social-media icons.
+  - `assets/better-minima-social-icons.svg` &mdash; A composite SVG file comprised of *symbols* related to various social-media icons.
     This file is used as-is without any processing. Refer [section on social networks](#social-networks) for its usage.
 
 
