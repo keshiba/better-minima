@@ -25,6 +25,13 @@ And then execute:
 
 ## Usage
 
+### Hero Name
+To get your name on the homepage as shown in the preview, add the following block to `_config.yml`
+```
+author:
+  name: imarandomguy
+```
+
 ### Featured Posts
 A list of *Featured Posts* are displayed on the homepage.
 To add a post to this list, set the `featured` variable to `true`.
