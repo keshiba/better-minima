@@ -22,6 +22,7 @@ And then execute:
     $ bundle
 
 ## Usage
+
 ### Featured Posts
 A list of *Featured Posts* are displayed on the homepage.
 To add a post to this list, set the `featured` variable to `true`.
@@ -32,6 +33,14 @@ title: "This is a featured post"
 featured: true
 ---
 Post content goes here
+```
+
+## Recent Posts
+The "Recent Posts" section shows 10 recent posts (by default) in it. 
+To change the recent posts count, add the following property to `_config.yml`.
+
+```
+recent_posts_count: 15
 ```
 
 ### Pagination
@@ -70,9 +79,11 @@ Download [index.html](https://github.com/keshiba/better-minima/blob/master/blog/
 
 This file will serve as the template for pagination and must be included exactly in the `paginate_root_path`.
 
-----
 
-Visit https://github.com/jekyll/minima for more information.
+## For More Information
+
+Visit https://github.com/jekyll/minima
+
 
 ## Contributing
 
