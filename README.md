@@ -1,5 +1,7 @@
 # better-minima
 
+[![Gem Version](https://badge.fury.io/rb/better-minima.svg)](https://badge.fury.io/rb/better-minima)
+
 *Better-Minima* is based on [Minima](https://github.com/jekyll/minima) which is Jekyll's default theme.
 Minima is a beautiful theme to begin with and has a clean look. 
 
