@@ -42,7 +42,7 @@ The "All Posts" section must be on a separate page for pagination to work correc
 To enable pagination, follow the steps given below.
 
 
-Step 1 
+#### Step 1 
 
 To `_config.yml`, add the following properties
 ```
@@ -52,23 +52,25 @@ paginate_path: "/blog/page:num/
 ```
 `paginate:5` - This enables pagination and instructs the theme to show *5* posts in a page.
 
-`paginate_root_path: "/blog/"` - This is your preferred path to the "All Posts" section.
+`paginate_root_path: "/blog/"` - This is your preferred URL path to navigate to the "All Posts" section.
 
 `paginate_path: "/blog/page:num/` - This is the path used by Minima to navigate to other pages while paginating. `:num` is the placeholder for page number.
 
 
-Step 2
+#### Step 2
 
-Create the folder which you've specified as `paginate_root_path` in `_config.yml` in your project's base directory.
+Create a new folder in your project's base directory with the name which you provided for `paginate_root_path` in `_config.yml`
 
 For example, if your jekyll site is located at `D:\Sites\MySite`, then you should create the folder at `D:\Sites\MySite\blog\`
 
 
-Step 3
+#### Step 3
 
 Download [index.html](https://github.com/keshiba/better-minima/blob/master/blog/index.html) into the folder which you created in Step-2.
 
 This file will serve as the template for pagination and must be included exactly in the `paginate_root_path`.
+
+----
 
 Visit https://github.com/jekyll/minima for more information.
 
