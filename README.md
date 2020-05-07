@@ -65,15 +65,29 @@ paginate_path: "/blog/page:num/
 
 `paginate_path: "/blog/page:num/` - This is the path used by Minima to navigate to other pages while paginating. `:num` is the placeholder for page number.
 
-
 #### Step 2
+To `_config.yml`, add the plugin `jekyll-plugins` to the `plugins` block
+
+```
+plugins:
+ - jekyll-paginate
+```
+
+#### Step 3
+Add gem dependency to `Gemfile`
+
+```
+gem 'jekyll-paginate', '>= 1.1.0
+```
+
+#### Step 4
 
 Create a new folder in your project's base directory with the name which you provided for `paginate_root_path` in `_config.yml`
 
 For example, if your jekyll site is located at `D:\Sites\MySite`, then you should create the folder at `D:\Sites\MySite\blog\`
 
 
-#### Step 3
+#### Step 5
 
 Download [index.html](https://github.com/keshiba/better-minima/blob/master/blog/index.html) into the folder which you created in Step-2.
 
