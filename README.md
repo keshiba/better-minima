@@ -7,7 +7,7 @@ Better-Minima builds upon it by making the theme more suitable for a personal bl
 
 [Theme preview](http://keshiba.me)
 
-![better-minima theme preview](/screenshot.png)
+![better-minima theme preview](https://raw.githubusercontent.com/keshiba/better-minima/master/screenshot.png)
 
 ## Installation
 
