@@ -56,7 +56,7 @@ featured: true
 Post content goes here
 ```
 
-## Recent Posts
+### Recent Posts
 The "Recent Posts" section shows 10 recent posts (by default) in it. 
 To change the recent posts count, add the following property to `_config.yml`.
 
