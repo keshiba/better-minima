@@ -26,11 +26,23 @@ And then execute:
 ## Usage
 
 ### Hero Name
-To get your name on the homepage as shown in the preview, add the following block to `_config.yml`
+To get your name on the homepage as shown in this preview, add the following block to `_config.yml`
 ```
 author:
   name: imarandomguy
 ```
+
+### Social Links
+To get the social links on your home page as shown in this preview, add the `social_links` block to `better-minima` config in `_config.yml`
+```
+better-minima:
+  social_links:
+    twitter: imarandomguy
+    github: randomguy
+    telegram: randomguy
+```
+
+For a list of all social links supported by this theme, take a look at this [_config.yml](https://github.com/keshiba/better-minima/blob/master/_config.yml) file.
 
 ### Featured Posts
 A list of *Featured Posts* are displayed on the homepage.
