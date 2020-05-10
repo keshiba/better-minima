@@ -23,6 +23,43 @@ And then execute:
 
     $ bundle
 
+This will fetch the gem and store it locally.
+
+Then, to use this theme, change the `theme` variable in your `_config.yml`
+```
+theme: "better-minima"
+```
+
+### NOTE - Github Pages
+If you want to host your Jekyll blog on GitHub, you need to follow the steps given below.
+
+
+#### Step1 - Add gem
+Add the gem `jekyll-remote-theme` to your `Gemfile`.
+```
+gem "jekyll-remote-theme"
+```
+
+#### Step2 - Modify _config.yml
+Add the plugin `jekyll-remote-theme` to your plugins list in `_config.yml`
+```
+plugins:
+  - jekyll-remote-theme
+```
+
+#### Step3 - Set remote-theme
+Add the theme name `keshiba/better-minima` to the `remote-theme` variable.
+```
+theme: minima
+remote-theme: "keshiba/better-minima"
+```
+
+#### Step4 - Install gem
+Run the `bundle` command to download and install the plugin
+```
+$ bundle
+```
+
 ## Usage
 
 ### Hero Name
