@@ -6,7 +6,7 @@
     {%- if site.author %}
       <div class="footer-content">
         {% if site.author.name -%}
-          &copy; 2020 {{ site.author.name | escape }}
+          &copy; {{ site.time | date: "%Y" }} {{ site.author.name | escape }}
         {% endif -%}
         {% if site.author.email -%}
           <a class="u-email" href="mailto:{{ site.author.email }}">
