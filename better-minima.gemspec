@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "better-minima"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Keshiba Ryan"]
   spec.email         = ["imkeshiba@gmail.com"]
 
